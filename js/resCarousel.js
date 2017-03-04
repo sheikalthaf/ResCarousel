@@ -82,21 +82,25 @@ function ResCarousel(e, el, s){
 	var divStyle = $(el+' '+itemsDiv).css('transform');
 	var values = divStyle.match(/-?[\d\.]+/g);
 	var xds = Math.abs(values[4]);
+	var IW = $(el).find('.item').outerWidth();
+	//alert(IW*s);
+	
 		if(e==0){
-			translateXval = parseInt(xds)-parseInt(itemWidth*s);				
+			translateXval = parseInt(xds)-parseInt(IW*s);				
 			$(el+' '+rightBtn).removeClass("outt");
 
-			if(translateXval<= itemWidth/2){
+			
+			if(translateXval<= IW/2){
 				translateXval = 0;
 				$(el+' '+leftBtn).addClass("outt");
 			}
 		}
 		else if(e==1){
 			var itemsCondition = $(el).find(itemsDiv).width()-$(el).width();
-			translateXval = parseInt(xds)+parseInt(itemWidth*s);
+			translateXval = parseInt(xds)+parseInt(IW*s);
 			$(el+' '+leftBtn).removeClass("outt");
 
-			if(translateXval>= itemsCondition-itemWidth/2){
+			if(translateXval>= itemsCondition-IW/2){
 				translateXval = itemsCondition;				
 				$(el+' '+rightBtn).addClass("outt");		
 			}
