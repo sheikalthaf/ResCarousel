@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>ResCarousel</title>
     <meta charset="utf-8">
@@ -8,20 +9,56 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong:300,400,400i,500,600,700" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+    <style>
+        body {
+            font-family: 'Trirong', serif;
+            background: #eee;
+        }
+        
+        .item {
+            padding: 10px;
+        }
+        
+        .divCount {
+            display: table;
+            min-height: 300px;
+            width: 100%;
+            background: #e8e8e8;
+            border-radius: 12px;
+        }
+        
+        .divCount h1 {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-weight: 900;
+            font-size: 50px;
+            color: grey;
+        }
+        
+        .resCarousel-inner .item {
+            background: white;
+            border: 4px solid #eee;
+        }
+    </style>
 </head>
+
 <body>
-<h1 class="text-center">ResCarousel<br><small>By<a href="http://creativetechsoft.com"> CreativeTechSoft</a></small></h1>
+    <h1 class="text-center">ResCarousel<br><small>By<a href="http://creativetechsoft.com"> CreativeTechSoft</a></small></h1>
 
 
-<!--home-->
-<div class="container-fluid p8">
-    <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-        <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-            <h4>data-slide=1</h4>
-        </div>
-        <div class="resCarousel" data-items="1,1,1,1" data-slide="1">
-            <div class="resCarousel-inner" >
-                <div class="item">
+    <!--home-->
+    <div class="container-fluid p8">
+        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
+                <h4>data-slide=1 & data-speed = 300</h4>
+            </div>
+            <div class="resCarousel" data-items="1,1,1,1" data-slide="1" data-speed="300">
+                <div class="resCarousel-inner">
+                    <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
                         </div>
@@ -32,7 +69,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -44,7 +81,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -56,7 +93,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -68,7 +105,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -80,8 +117,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -93,9 +130,9 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
 
-                    <!--second-->                    
+
+                    <!--second-->
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -107,7 +144,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -119,7 +156,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -131,7 +168,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -143,7 +180,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -155,8 +192,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -168,7 +205,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -180,7 +217,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -192,23 +229,23 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
+                </div>
+                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
             </div>
-            <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-			<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
-</div>
 
-<!--home-->
-<div class="container-fluid p8">
-    <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-        <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-            <h4>data-slide=2</h4>
-        </div>
-        <div class="resCarousel" data-items="2,2,2,2" data-slide="2">
-            <div class="resCarousel-inner" >
-                <div class="item">
+    <!--home-->
+    <div class="container-fluid p8">
+        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
+                <h4>data-slide=2 & data-speed = 600</h4>
+            </div>
+            <div class="resCarousel" data-items="2,2,2,2" data-slide="2" data-speed="600">
+                <div class="resCarousel-inner">
+                    <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
                         </div>
@@ -219,7 +256,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -231,7 +268,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -243,7 +280,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -255,7 +292,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -267,8 +304,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -280,9 +317,9 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
 
-                    <!--second-->                    
+
+                    <!--second-->
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -294,7 +331,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -306,7 +343,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -318,7 +355,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -330,7 +367,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -342,8 +379,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -355,7 +392,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -367,7 +404,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -379,22 +416,23 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
+                </div>
+                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
             </div>
-            <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-			<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
-</div>
-<!--home-->
-<div class="container-fluid p8">
-    <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-        <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-            <h4>data-slide=3</h4>
-        </div>
-        <div class="resCarousel" data-items="2,3,3,3" data-slide="3">
-            <div class="resCarousel-inner" >
-                <div class="item">
+
+    <!--home-->
+    <div class="container-fluid p8">
+        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
+                <h4>data-slide=3 & data-speed = 900</h4>
+            </div>
+            <div class="resCarousel" data-items="2,3,3,3" data-slide="3" data-speed="900">
+                <div class="resCarousel-inner">
+                    <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
                         </div>
@@ -405,7 +443,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -417,7 +455,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -429,7 +467,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -441,7 +479,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -453,8 +491,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -466,9 +504,9 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
 
-                    <!--second-->                    
+
+                    <!--second-->
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -480,7 +518,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -492,7 +530,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -504,7 +542,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -516,7 +554,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -528,8 +566,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -541,7 +579,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -553,7 +591,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -565,22 +603,23 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
+                </div>
+                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
             </div>
-            <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-			<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
-</div>
-<!--home-->
-<div class="container-fluid p8">
-    <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-        <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-            <h4>data-slide=4</h4>
-        </div>
-        <div class="resCarousel" data-items="2,4,4,4" data-slide="4">
-            <div class="resCarousel-inner" >
-                <div class="item">
+
+    <!--home-->
+    <div class="container-fluid p8">
+        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
+                <h4>data-slide=4</h4>
+            </div>
+            <div class="resCarousel" data-items="2,4,4,4" data-slide="4">
+                <div class="resCarousel-inner">
+                    <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
                         </div>
@@ -591,7 +630,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -603,7 +642,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -615,7 +654,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -627,7 +666,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -639,8 +678,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -652,9 +691,9 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
 
-                    <!--second-->                    
+
+                    <!--second-->
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -666,7 +705,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -678,7 +717,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -690,7 +729,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -702,7 +741,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -714,8 +753,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -727,7 +766,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -739,7 +778,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -751,22 +790,23 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
+                </div>
+                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
             </div>
-            <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-			<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
-</div>
-<!--home-->
-<div class="container-fluid p8">
-    <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-        <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-            <h4>data-slide=5</h4>
-        </div>
-        <div class="resCarousel" data-items="2,4,5,5" data-slide="5">
-            <div class="resCarousel-inner" >
-                <div class="item">
+
+    <!--home-->
+    <div class="container-fluid p8">
+        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
+            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
+                <h4>data-slide=5</h4>
+            </div>
+            <div class="resCarousel" data-items="2,4,5,5" data-slide="5">
+                <div class="resCarousel-inner">
+                    <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
                         </div>
@@ -777,7 +817,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -789,7 +829,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -801,7 +841,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -813,7 +853,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -825,8 +865,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -838,9 +878,9 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
 
-                    <!--second-->                    
+
+                    <!--second-->
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -852,7 +892,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -864,7 +904,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -876,7 +916,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -888,7 +928,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -900,8 +940,8 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
-                    
+
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -913,7 +953,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -925,7 +965,7 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
                     <div class="item">
                         <div class="col-xs-12 col-sm-12 col-lg-12 EiProdImg">
                             <img src="images/tab.jpg" class="img-responsive">
@@ -937,14 +977,16 @@
                             <div class="EiDisc">50% off</div>
                         </div>
                     </div>
-                    
+
+                </div>
+                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
             </div>
-            <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-			<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
-</div>
+
     <script src="js/resCarousel.js"></script>
 
 </body>
+
 </html>

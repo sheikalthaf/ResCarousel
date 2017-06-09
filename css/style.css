@@ -1,137 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Trirong:300,400,400i,500,600,700');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
-
 /*resCarousel Css*/
+
 .outt {
     display: none;
 }
 
-.leftLs, .leftLst {
+.leftRs {
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
-    z-index:100;
+    z-index: 100;
     left: 0;
-    width: 40px;
-    height: 100px;
-    box-shadow: 1px 2px 10px -1px rgba(0,0,0,.3);
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
 }
-.rightLs, .rightLst {
+
+.rightRs {
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index:100;
-    width: 40px;
-    height: 100px;
-    box-shadow: 1px 2px 10px -1px rgba(0,0,0,.3);
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+    border-radius: 999px;
 }
+
 .resCarousel {
     float: left;
     overflow: hidden;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     width: 100%;
-}
-.resCarousel-inner {
-    transition: 1s ease all;
-    float: left;
-}
-.resCarousel-inner .item {
-    float: left;
-}
-
-/*resCarousel Css End*/
-
-
-
-
-body {
-    background: #FCEFEA;
-    font-family: 'Trirong', serif;
-    padding-bottom: 50px;
-}
-.p0 {
-    padding: 0;
-}
-.p8 {
-    padding: 8px;
-}
-.shad a {
-    color: black;
-    text-decoration: none;
-}
-.itm {
-    display: none;
-}
-.act, .nxt {
-    display: block;
-}
-.sliderMain {
-    height: 280px;
-    overflow: hidden;
-}
-
-/*products*/
-.shad {
-    background: white;
-    box-sizing: border-box;
-    /*border: 8px solid white;*/
-    /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.12),1px 4px 7px 0 rgba(0,0,0,.1);
-    padding-bottom: 15px;
-}
-.EiProducts .shad a {
-    color: black;
-}
-.item, .EiProd {
-    padding: 10px;
-    border-right: 1px solid rgb(242, 242, 242);
-    border-bottom: 1px solid rgb(242, 242, 242);
-}
-.EiProdH {
-    padding: 5px 15px;
-    font-weight: bold;
-    margin-bottom: 11px;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-}
-
-
-
-
-.item:hover .EiProdImg img {
-    transform: scale(1.05);
-    transition: 0.3s ease all;
     position: relative;
 }
-.EiProdImg img {
-    max-height: 190px;
-    max-width: 100%;
-    transition: 0.3s ease all;
-    margin: 0 auto;
-    display: block;   
+
+.resCarousel-inner {
+    /*transition: 1s ease all;*/
+    overflow-x: hidden;
+    white-space: nowrap;
+    font-size: 0;
 }
-.EiPName {
-    width: 100%;
+
+.resCarousel-inner .item {
+    display: inline-block;
+    font-size: 14px;
+    white-space: initial;
 }
-.EiProdName {
-    padding: 0;
-}
-.EiProdName div {
-    float: left;
-    padding: 4px;
-}
-.EiProdName .EiPrice {
-    font-weight: bold;
-    font-size: 16px;
-}
-.EiProdName .EiPriceT {
-    color: grey;
-    text-decoration: line-through;
-    font-size: 16px;    
-}
-.EiProdName .EiDisc {
-    color: green;
-    font-size: 16px;    
-}
+
+
+/*resCarousel Css End*/

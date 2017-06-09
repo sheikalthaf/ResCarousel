@@ -15,8 +15,8 @@ ResCarousel Means "Responsive Carousel"
       ...
       ...
   </div>
-  <button class='btn btn-default leftLst'><i class="fa fa-fw fa-angle-left"></i></button>
-	<button class='btn btn-default rightLst'><i class="fa fa-fw fa-angle-right"></i></button>
+  <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+	<button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
 </div>
 
 # About data-items="xs,sm,md,lg"
