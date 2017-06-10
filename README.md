@@ -55,8 +55,12 @@ type: milli seconds
 
 # data-speed
 ```
+<<<<<<< HEAD
 type:  milli seconds,
 default: 300
+=======
+type:  milli seconds
+>>>>>>> 8fdc6ef5132bc404c1f607a5fe3afe993ee1e77a
 ```
 (eg. data-speed="300")
 
@@ -66,4 +70,8 @@ Hope you guys enjoying the Rescarousel
 
 if you find any bug let me know i will try to solve as much as possible
 
+<<<<<<< HEAD
 > # By CreativeTechSoft
+=======
+> # By CreativeTechSoft
+>>>>>>> 8fdc6ef5132bc404c1f607a5fe3afe993ee1e77a
