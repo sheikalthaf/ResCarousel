@@ -43,7 +43,7 @@ data-slide is important one in this carousel which defines the no of item to be 
 
 # About data-speed = in milli seconds
 
-(eg. data-slide="2")
+(eg. data-speed="300")
 
 data-speed is used to control the speed of the moving items
 
