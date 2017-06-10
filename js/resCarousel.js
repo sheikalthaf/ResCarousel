@@ -2,26 +2,27 @@
 $(document).ready(function() {
     $('.leftRs, .rightRs').click(function() {
         // alert("btnClick");
-        resCarouselBtn(this);
+        ResCarousel(this);
     });
     ResCarouselSize();
+    ResAutoSlide();
 });
-
-
-function resCarouselBtn(element) {
-    var cond = $(element).hasClass("leftRs");
-    cond ? click(0, element) : click(1, element)
-}
 
 $(window).resize(function() {
     ResCarouselSize();
 });
 
-//It is used to get some elements from btn
-function click(flag, ee) {
-    var Parent = "#" + $(ee).parent().attr("id");
-    var slide = $(Parent).attr("data-slide");
-    ResCarousel(flag, Parent, parseInt(slide));
+// Rescarousel Auto Slide
+function ResAutoSlide() {
+    $(".resCarousel").each(function() {
+        var thiss = $(this).find(".rightRs");
+        var dataInterval = $(this).attr('data-interval');
+        if (!isNaN(dataInterval)) {
+            setInterval(function() {
+                ResCarousel(thiss);
+            }, parseInt(dataInterval));
+        }
+    });
 }
 
 //this function define the size of the items
@@ -29,17 +30,15 @@ function ResCarouselSize() {
 
     var incno = 0;
     var id = 0;
-    var itemWidth = "";
-    var sampwidth = $('.resCarousel').width();
     var itemsDiv = ('.resCarousel-inner');
     var bodyWidth = $('body').width();
     $(itemsDiv).each(function() {
-        id = id + 1;
-        var divValue = parseInt($(this).parent().attr('value'));
-        var itemNumbers = $(this).find('item').length;
+        id++;
+        var sampwidth = $(this).width();
+
         var itemsSplit = $(this).parent().attr("data-items").split(',');
-        var parnid = $(this).parent().attr("id", "ResSlid" + id);
-        //$(this).css({ 'transition': '' });
+
+        $(this).parent().attr("id", "ResSlid" + id);
 
         if (bodyWidth >= 1200) {
             incno = itemsSplit[3];
@@ -50,99 +49,97 @@ function ResCarouselSize() {
         } else {
             incno = itemsSplit[0];
         }
-        itemWidth = sampwidth / incno;
-
-        //$(this).find(itemClass).each(function(){
-        //	$(this).outerWidth(itemWidth);
-        //});
+        var itemWidth = sampwidth / incno;
 
         $(this).find("style").remove();
         $(this).append("<style>#ResSlid" + id + " .item {width: " + itemWidth + "px}</style>");
-        $(this).attr("data-width", itemWidth)
-        console.log(itemWidth);
-        // value available
-        var val = $(this).parent().attr('value');
-        if (val) {
-            $(this).scrollLeft(val * itemWidth);
+        //$(this).attr("data-width", itemWidth);
+        //console.log(itemWidth);
 
-            // $(this).css("transform", "translateX(-" + divValue * itemWidth + "px)");
+        // value available
+        var divValue = $(this).parent().attr('value');
+        if (divValue) {
+            $(this).scrollLeft(divValue * itemWidth);
         } else {
-            //$(this).css('transform', 'translateX(0px)');
             $(this).parent().attr("value", "0");
         }
-        //$(this).slideDown(200);
-        //$(this).css({ 'width': itemWidth * itemNumbers, 'transition': '.6s ease all' });
 
-        $(this).parent().attr("data-slide", incno);
-        $(".leftRs").addClass("outt");
-        $(".rightRs").removeClass("outt");
+        $(this).parent().attr("data-itm", incno);
 
     });
 }
 
 //this function used to move the items
-function ResCarousel(flag, element, slide) {
-    var leftBtn = $(element).find('.leftRs'),
-        rightBtn = $(element).find('.rightRs'),
-        itemsDiv = $(element).find('.resCarousel-inner'),
-        divValue = parseInt($(element).attr('value')),
-        itemWidth = itemsDiv.attr("data-width"),
-        itemSpeed = parseInt($(element).attr("data-speed")),
+function ResCarousel(Btn) {
+    var t0 = performance.now();
+    var parent = $(Btn).parent();
+    var leftBtn = parent.find('.leftRs'),
+        rightBtn = parent.find('.rightRs'),
+        slide = parseInt(parent.attr("data-slide")),
+        itemsDiv = parent.find('.resCarousel-inner'),
+        divValue = parseInt(parent.attr('value')),
+        //itemWidth = itemsDiv.attr("data-width"),
+        itemSpeed = parseInt(parent.attr("data-speed")),
         translateXval = '',
-        currentSlide = ""
-        //var itemWidth123 = $(element).find('.item').outerWidth();
-    itemSpeed = !isNaN(itemSpeed) ? itemSpeed : 400;
-    var itemLenght = $(element).find(".item").length;
+        currentSlide = "",
+        itemLenght = itemsDiv.find(".item").length;
+    var itemWidth = itemsDiv.find('.item').outerWidth();
 
-    if (flag == 0) {
+    var dataItm = parseInt(parent.attr("data-itm"));
+    var cond = $(Btn).hasClass("leftRs");
+    //console.log(cond);
+    if (cond) {
 
         currentSlide = divValue - slide;
         translateXval = currentSlide * itemWidth
-        rightBtn.removeClass("outt");
-
         var MoveSlide = currentSlide + slide;
 
-        var itemFilled = leftBtn.attr("data-filled");
-        console.log(itemFilled);
-        if (itemFilled == 0) {
-            //currentSlide = currentSlide - (MoveSlide - itemLenght);
+        var itemloop = leftBtn.attr("data-loop");
+        rightBtn.attr("data-loop", 1);
+        //console.log(itemloop);
+        if (itemloop == 0) {
             currentSlide = itemLenght - slide;
             translateXval = currentSlide * itemWidth;
+            currentSlide = itemLenght - dataItm;
 
-            console.log(currentSlide + "," + translateXval);
-            leftBtn.attr("data-filled", 1);
+            //console.log(currentSlide + "," + translateXval);
+            leftBtn.attr("data-loop", 1);
+            rightBtn.attr("data-loop", 0);
         } else if (slide >= MoveSlide) {
             currentSlide = translateXval = 0;
-            leftBtn
-            //.addClass("outt")
-                .attr("data-filled", 0);
+            leftBtn.attr("data-loop", 0);
+
         }
 
-    } else if (flag == 1) {
+    } else {
         currentSlide = divValue + slide;
         translateXval = currentSlide * itemWidth
-        leftBtn.removeClass("outt");
-
-        currentSlide = divValue + slide;
+        leftBtn.attr("data-loop", 1);
         var MoveSlide = currentSlide + slide;
 
-        console.log(itemLenght + "," + MoveSlide);
-        var itemFilled = rightBtn.attr("data-filled");
-        if (itemFilled == 0) {
+        //console.log(itemLenght + "," + (MoveSlide + "," + slide + "," + dataItm));
+        //console.log(itemLenght + "," + (MoveSlide - slide + dataItm));
+        var itemloop = rightBtn.attr("data-loop");
+
+        if (itemloop == 0) {
             currentSlide = translateXval = 0;
-            rightBtn.attr("data-filled", 1);
-        } else
-        if (itemLenght <= MoveSlide) {
-            currentSlide = currentSlide - (MoveSlide - itemLenght);
-            //currentSlide = itemLenght;
+            rightBtn.attr("data-loop", 1);
+            leftBtn.attr("data-loop", 0);
+        } else if (itemLenght <= (MoveSlide - slide + dataItm)) {
+            currentSlide = itemLenght - slide;
             translateXval = currentSlide * itemWidth;
-            // rightBtn.addClass("outt");
-            rightBtn.attr("data-filled", 0);
+            currentSlide = itemLenght - dataItm;
+
+            rightBtn.attr("data-loop", 0);
         }
     }
     //console.log(itemsDiv.scrollLeft() + "," + translateXval)
-    console.log(itemSpeed);
-    itemsDiv.animate({ scrollLeft: translateXval }, itemSpeed);
+    //console.log(itemSpeed);
+    itemSpeed = !isNaN(itemSpeed) ? itemSpeed : 400;
 
-    $(element).attr("value", currentSlide);
+    itemsDiv.animate({ scrollLeft: translateXval }, itemSpeed);
+    parent.attr("value", currentSlide);
+
+    var t1 = performance.now();
+    console.log('Took', (t1 - t0).toFixed(4), 'milliseconds to generate');
 }
