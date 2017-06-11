@@ -18,6 +18,10 @@
             background: #eee;
         }
         
+        .p0 {
+            padding: 0;
+        }
+        
         .divCount {
             display: table;
             min-height: 300px;
@@ -54,221 +58,177 @@
             display: table-cell;
             vertical-align: middle;
         }
+        
+        .first .item div {
+            background: url('demoImg.jpg') center top no-repeat;
+            background-size: cover;
+            min-height: 500px;
+        }
+        
+        .item div {
+            background: url('demoImg.jpg') center center no-repeat;
+            background-size: cover;
+            height: 250px;
+            color: white;
+        }
+        
+        .item div h1 {
+            background: rgba(0, 0, 0, .4);
+        }
     </style>
 </head>
 
 <body>
-    <h1 class="text-center">ResCarousel<br><small>By<a href="http://creativetechsoft.com"> CreativeTechSoft</a></small></h1>
+    <p class="text-center">ResCarousel<small> By<a href="http://creativetechsoft.com"> CreativeTechSoft</a></small></p>
 
 
     <!--home-->
-    <div class="container-fluid p8">
-        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-                <h4>data-slide=1 & data-speed = 300 & data-interval = "6000"</h4>
-            </div>
-            <div class="resCarousel" data-items="1,1,1,1" data-slide="1" data-speed="300" data-interval="6000">
-                <div class="resCarousel-inner">
+    <div class="container-fluid p0">
+        <h4>data-items="1,1,1,1" data-slide="1" data-speed="700" data-interval="6000"</h4>
 
-                    <div class="item">
-                        <div>
-                            <h1>1</h1>
-                        </div>
+        <div class="resCarousel" data-items="1,1,1,1" data-slide="1" data-speed="700" data-interval="6000">
+            <div class="resCarousel-inner first">
+
+                <div class="item">
+                    <div>
+                        <h1>1</h1>
                     </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>2</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>3</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>4</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>5</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>6</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>7</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>8</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>9</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>10</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>11</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>12</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>13</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>14</h1>
-                        </div>
-                    </div>
-
                 </div>
-                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
-                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
+
+                <div class="item">
+                    <div>
+                        <h1>2</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>3</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>4</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>5</h1>
+                    </div>
+                </div>
+
             </div>
+            <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+            <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
 
     <!--home-->
-    <div class="container-fluid p8">
-        <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
-            <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-                <h4>data-slide=2 & data-speed = 600</h4>
-            </div>
-            <div class="resCarousel" data-items="2,2,2,2" data-slide="2" data-speed="600">
-                <div class="resCarousel-inner">
+    <div class="container">
+        <h4>data-items="2,2,2,2" data-slide="2" data-interval="2000" data-speed="600"</h4>
+        <div class="resCarousel" data-items="2,2,2,2" data-slide="2" data-interval="2000" data-speed="600">
+            <div class="resCarousel-inner">
 
-                    <div class="item">
-                        <div>
-                            <h1>1</h1>
-                        </div>
+                <div class="item">
+                    <div>
+                        <h1>1</h1>
                     </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>2</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>3</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>4</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>5</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>6</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>7</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>8</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>9</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>10</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>11</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>12</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>13</h1>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div>
-                            <h1>14</h1>
-                        </div>
-                    </div>
-
                 </div>
-                <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
-                <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
+
+                <div class="item">
+                    <div>
+                        <h1>2</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>3</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>4</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>5</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>6</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>7</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>8</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>9</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>10</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>11</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>12</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>13</h1>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div>
+                        <h1>14</h1>
+                    </div>
+                </div>
+
             </div>
+            <button class='btn btn-default leftRs'><i class="fa fa-fw fa-angle-left"></i></button>
+            <button class='btn btn-default rightRs'><i class="fa fa-fw fa-angle-right"></i></button>
         </div>
     </div>
 
     <!--home-->
-    <div class="container-fluid p8">
+    <div class="container p8">
         <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
             <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-                <h4>data-slide=3 & data-speed = 900</h4>
+                <h4>data-items="2,3,3,3" data-slide="3" data-speed="900"</h4>
             </div>
             <div class="resCarousel" data-items="2,3,3,3" data-slide="3" data-speed="900">
-                <div class="resCarousel-inner">
+                <div class="resCarousel-inner second">
 
                     <div class="item">
                         <div>
@@ -362,10 +322,10 @@
     </div>
 
     <!--home-->
-    <div class="container-fluid p8">
+    <div class="container p8">
         <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
             <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-                <h4>data-slide=4</h4>
+                <h4>data-items="2,4,4,4" data-slide="1"</h4>
             </div>
             <div class="resCarousel" data-items="2,4,4,4" data-slide="1">
                 <div class="resCarousel-inner">
@@ -461,12 +421,12 @@
     </div>
 
     <!--home-->
-    <div class="container-fluid p8">
+    <div class="container p8">
         <div class="col-xs-12 col-sm-12 col-lg-12 shad p0">
             <div class="col-xs-12 col-sm-12 col-lg-12 EiProdH">
-                <h4>data-slide=5</h4>
+                <h4>data-items="2,3,4,5" data-slide="5"</h4>
             </div>
-            <div class="resCarousel" data-items="2,4,5,5" data-slide="5">
+            <div class="resCarousel" data-items="2,3,4,5" data-slide="5">
                 <div class="resCarousel-inner">
 
                     <div class="item">

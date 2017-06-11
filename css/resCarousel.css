@@ -31,7 +31,7 @@
 }
 
 .resCarousel {
-    float: left;
+    /*float: left;*/
     overflow: hidden;
     width: 100%;
     position: relative;
