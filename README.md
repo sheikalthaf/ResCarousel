@@ -1,5 +1,5 @@
 # ResCarousel
-This is Project is based on bootstrap carousel. I have Seen some disadvantage in bootstrap carousel so it started to develope this ResCarousel. I actually developed this for my Online store project.
+This is Project is based on bootstrap carousel. I have Seen some disadvantage in bootstrap carousel so i started to develope this ResCarousel. 
 
 ResCarousel Means "Responsive Carousel"
 ```
@@ -21,9 +21,9 @@ ResCarousel Means "Responsive Carousel"
 ```
 # data-items
 ```
-type: "xs,sm,md,lg"
+type: "xs-sm-md-lg"
 ```
-(eg. data-items="2,4,5,6")
+(eg. data-items="2-4-5-6")
 
 `data-items` is important one in this carousel which defines the no of item to be viewed in a page.
 
@@ -58,9 +58,37 @@ type: milli seconds
 type:  milli seconds,
 default: 300
 ```
-(eg. data-speed="300")
+(eg. data-speed="600")
 
 `data-speed` is used to control the speed of the moving items
+
+# data-animator
+```
+type: string
+```
+(eg. data-interval="lazy")
+
+`data-animator` is used to give some animation to sliding items. currently `lazy` animation only available.
+
+# data-load
+```
+type: number
+```
+(eg. data-interval="6")
+
+`data-load` is used to intimate that the slider is going to touch the end( data-load value ) so that the developer can load( append ) another set of items. for more info go to the header link.
+
+
+# custom CSS
+
+## Banner
+
+if your using this for banner add a `banner` class to rescarousel-inner. so that it will bhehave like a banner.
+
+
+## Tile
+
+for tile just create a div with class name `tile`. then you will get a tile structure.
 
 Hope you guys enjoying the Rescarousel
 
